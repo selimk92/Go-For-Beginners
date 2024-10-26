@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	i := 0
-	for {
+loop:
+	for i := 1; i <= 3; i++ {
 		fmt.Println(i)
-		i++
-		if i == 5 {
-			break
+		for j := 1; j <= 3; j++ {
+			fmt.Println(i * j)
+			if i*j >= 3 {
+				break loop
+			}
+
 		}
 
 	}
