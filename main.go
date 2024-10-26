@@ -3,20 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	number := 50
-	guess := 34
-	if guess < 1 || guess > 100 {
+	switch 4 {
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("two")
+	case 3:
+		fmt.Println("three")
+	default:
+		fmt.Println("default")
 
-		fmt.Println("The guess must be between 1 and 100")
-	} else {
-		if guess < number {
-			fmt.Println("Guess:", guess, "is below", number)
-		}
-		if guess > number {
-			fmt.Println("Guess:", guess, "is above", number)
-		}
-		if guess == number {
-			fmt.Println("Guess is equal to number")
-		}
 	}
 }
