@@ -4,9 +4,8 @@ import "fmt"
 
 func main() {
 
-	s := []int{1, 2, 3}
-	for i, v := range s {
-		fmt.Println(i, v)
-	}
+	fmt.Println("start")
+	defer fmt.Println("middle")
+	fmt.Println("end")
 
 }
