@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	switch 4 {
-	case 1:
+	i := 5
+	switch {
+	case i <= 10:
 		fmt.Println("one")
-	case 2:
+	case i <= 20:
 		fmt.Println("two")
-	case 3:
+	case i == 5:
 		fmt.Println("three")
 	default:
 		fmt.Println("default")
