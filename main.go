@@ -6,8 +6,9 @@ import (
 
 func main() {
 
-	a, b := 1, 0
-	ans := a / b
-	panic(ans)
-	fmt.Println(ans)
+	a := 42
+	b := &a
+	fmt.Println(a, *b)
+	a = 27
+	fmt.Println(a, *b)
 }
